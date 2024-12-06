@@ -149,7 +149,8 @@ export const getServerSideProps = (async (context) => {
   const { id } = context.params as { id: string };
 
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/guides/${id}`);
+    const NEXT_PUBLIC_API_URL = "https://goodzik-api.eventbook.pp.ua";
+    const res = await fetch(`${NEXT_PUBLIC_API_URL}/guides/${id}`);
     const text = await res.text();
     const repo: Repo = JSON.parse(text);
     return { props: { repo } };

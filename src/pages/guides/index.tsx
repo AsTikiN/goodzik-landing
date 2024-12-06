@@ -29,7 +29,7 @@ export const getStaticProps = async () => {
 
   if (!guidesResponse.ok) throw new Error("Failed to fetch guides");
 
-  const newsResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/news`);
+  const newsResponse = await fetch(`${NEXT_PUBLIC_API_URL}/news`);
 
   if (!newsResponse.ok) throw new Error("Failed to fetch news");
 
