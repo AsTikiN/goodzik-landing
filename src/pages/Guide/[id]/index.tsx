@@ -80,7 +80,7 @@ export default function Guide({
       <Stack mt="20px">
         <Subtitle>Author</Subtitle>
         <Description>
-          <b>{guide.author.userName}</b> {guide.author.email}
+          <b>{guide.author.userName}</b> testemail@gmail.com
         </Description>
       </Stack>
 
