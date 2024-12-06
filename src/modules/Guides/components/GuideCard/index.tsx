@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { Card, styled, Typography } from "@mui/material";
 import { GuideDto } from "../../types/GuideDto";
 
@@ -6,8 +7,13 @@ export interface GuideCardProps {
 }
 
 export const GuideCard = ({ data }: GuideCardProps) => {
+  const router = useRouter();
+
   return (
-    <GuideCard.Wrapper variant="outlined">
+    <GuideCard.Wrapper
+      variant="outlined"
+      onClick={() => router.push(`/guide/${data.id}`)}
+    >
       <GuideCard.Header>
         <GuideCard.Title variant="h6" fontWeight={600}>
           {data.title}
@@ -51,4 +57,10 @@ GuideCard.Wrapper = styled(Card)`
   flex-direction: column;
   border-radius: ${({ theme }) => `${theme.shape.borderRadius * 2}px`};
   padding: ${({ theme }) => theme.spacing(2)};
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;

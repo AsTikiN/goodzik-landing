@@ -102,6 +102,6 @@ We welcome contributions! Please follow these steps:
 - [PayPal](mailto:marishka.polo@gmail.com)
 - [Support Link](https://send.monobank.ua/jar/5VV7zhDJGY)
 
-## 📄 License
+## 📄 License!
 
 This project is licensed under the MIT License.
