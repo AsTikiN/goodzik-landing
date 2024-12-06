@@ -24,10 +24,19 @@ export const GuideCard = ({ data }: GuideCardProps) => {
 };
 
 GuideCard.Title = styled(Typography)`
-  line-clamp: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+`;
+
+GuideCard.Description = styled(Typography)`
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 GuideCard.Header = styled("div")`
