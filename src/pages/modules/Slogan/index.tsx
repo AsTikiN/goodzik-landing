@@ -14,8 +14,15 @@ import { decorativeShapes } from "./data/decorativeShapes";
 import { floatAnimation } from "@/lib/floatAnimation";
 import { ScrollMotion } from "@/components/ScrollMotion";
 import { timings } from "@/config/animation";
+import { useRouter } from "next/router";
 
 export const Slogan = () => {
+  const router = useRouter();
+
+  const handleNavigate = () => {
+    router.push("/guides");
+  };
+
   return (
     <SnapSection justifyContent="center" id="home">
       <Container>
@@ -32,10 +39,16 @@ export const Slogan = () => {
 
           <Stack flexDirection="row" gap="12px" mt="38px">
             <ScrollMotion delay={timings.stagger}>
-              <Button size="large">Get Started</Button>
+              <Button size="large" onClick={handleNavigate}>
+                Get Started
+              </Button>
             </ScrollMotion>
             <ScrollMotion delay={timings.stagger * 2}>
-              <Button variant="outlined" size="large">
+              <Button
+                variant="outlined"
+                size="large"
+                href="https://goodzik-api.eventbook.pp.ua/docs#/"
+              >
                 API
               </Button>
             </ScrollMotion>

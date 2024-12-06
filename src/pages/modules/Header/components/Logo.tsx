@@ -5,7 +5,7 @@ export const Logo = () => {
   return (
     <Stack direction="row" alignItems="center" gap="20px">
       <img src="/logo.png" alt="logo" />
-      <StyledTypography>Goodzik</StyledTypography>
+      <StyledTypography>Sewing division</StyledTypography>
     </Stack>
   );
 };

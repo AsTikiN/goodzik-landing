@@ -8,19 +8,19 @@ import { Box, Stack, styled } from "@mui/system";
 
 const advantagesData = [
   {
-    title: "Quality",
+    title: "Comprehensive Learning",
     description:
-      "Follow a hashtag growth total posts, videos and images.more revitions",
+      "Access detailed sewing guides, tutorials, and news about adaptive clothing creation, all in one centralized platform.",
   },
   {
-    title: "Communication",
+    title: "Interactive Support",
     description:
-      "Follow a hashtag growth total posts, videos and images.more revitions",
+      "Get help from our AI assistant and community of experienced sewists who specialize in adaptive clothing modifications.",
   },
   {
-    title: "Reliability",
+    title: "Up-to-date Resources",
     description:
-      "Follow a hashtag growth total posts, videos and images.more revitions",
+      "Stay informed with the latest adaptive sewing techniques, material recommendations, and industry news through our regularly updated content.",
   },
 ];
 
@@ -43,10 +43,12 @@ export const Advantages = () => {
           </Box>
         </Stack>
         <Stack maxWidth="637px" width="100%">
-          <Title>Why we best?</Title>
+          <Title>Why Choose Our Platform?</Title>
           <Description>
-            Don’t waste time on search manual tasks. Let Automation do it for
-            you. Simplify workflows, reduce errors, and save time.
+            Our learning platform brings together everything you need to master
+            adaptive clothing creation. From step-by-step sewing guides to
+            expert advice and community support, we make learning accessible and
+            effective.
           </Description>
 
           <Stack mt="60px" gap="30px">

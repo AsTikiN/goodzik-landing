@@ -19,59 +19,59 @@ import { useState } from "react";
 
 const services = [
   {
-    title: "News",
-    description: "Sharing all actual info related to our topic",
-    icon: <NewsIcon />,
+    title: "SoftServe",
+    description: "Top Ukrainian IT services company",
+    icon: <ShoppingBagIcon />,
   },
   {
-    title: "Guides",
-    description: "Step-by-step instructions for sewing clothing",
-    icon: <GuideIcon />,
+    title: "Rozetka",
+    description: "Ukraine's biggest online retail marketplace",
+    icon: <ShoppingCartIcon />,
   },
   {
-    title: "Ai assistant",
-    description: "Streamlines tasks with intelligent support",
-    icon: <AiAssistantIcon />,
+    title: "Nova Poshta",
+    description: "Major Ukrainian postal delivery service",
+    icon: <ShoppingBagIcon />,
   },
   {
-    title: "Open Api",
-    description: "Enables seamless integration and flexibility",
+    title: "Monobank",
+    description: "Popular mobile banking in Ukraine",
     icon: <OpenApiIcon />,
   },
   {
-    title: "News",
-    description: "Sharing all actual info related to our topic",
-    icon: <NewsIcon />,
-  },
-  {
-    title: "Guides",
-    description: "Step-by-step instructions for sewing clothing",
-    icon: <GuideIcon />,
-  },
-  {
-    title: "Ai assistant",
-    description: "Streamlines tasks with intelligent support",
+    title: "Grammarly",
+    description: "AI writing assistant from Ukraine",
     icon: <AiAssistantIcon />,
   },
   {
-    title: "Open Api",
-    description: "Enables seamless integration and flexibility",
+    title: "Genesis",
+    description: "Ukrainian tech product development leader",
+    icon: <GuideIcon />,
+  },
+  {
+    title: "EPAM Ukraine",
+    description: "Global software engineering solutions provider",
     icon: <OpenApiIcon />,
   },
   {
-    title: "News",
-    description: "Sharing all actual info related to our topic",
-    icon: <NewsIcon />,
+    title: "Intellias",
+    description: "Tech consulting and software experts",
+    icon: <AiAssistantIcon />,
   },
   {
-    title: "Guides",
-    description: "Step-by-step instructions for sewing clothing",
+    title: "GlobalLogic",
+    description: "Digital engineering solutions and consulting",
     icon: <GuideIcon />,
   },
   {
-    title: "Ai assistant",
-    description: "Streamlines tasks with intelligent support",
-    icon: <AiAssistantIcon />,
+    title: "Sigma Software",
+    description: "IT services and tech solutions",
+    icon: <OpenApiIcon />,
+  },
+  {
+    title: "N-iX",
+    description: "Eastern European software development company",
+    icon: <NewsIcon />,
   },
 ];
 
@@ -139,10 +139,11 @@ export const Partners = () => {
           <Stack maxWidth="500px" gap="20px">
             <Title>Our partners</Title>
             <Description>
-              We provide comprehensive adaptive clothing sewing guides, offering
-              step-by-step instructions, helpful tips, and expert support to
-              create functional, comfortable garments for those in need,
-              ensuring quality and precision in every stitch
+              We are proud to collaborate with leading organizations including
+              Military Medical Clinical Center of Western Region, Lviv Military
+              Hospital, Come Back Alive Foundation, and numerous rehabilitation
+              centers across Ukraine. Together, we ensure that our adaptive
+              clothing reaches those who need it most.
             </Description>
           </Stack>
         </Stack>

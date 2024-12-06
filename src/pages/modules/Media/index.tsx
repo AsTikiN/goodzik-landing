@@ -18,44 +18,43 @@ import {
 
 const itemData = [
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
-    title: "Breakfast",
+    img: "https://civil-protection-humanitarian-aid.ec.europa.eu/sites/default/files/styles/embed_large/public/2022-12/A%20story%20of%202%20volunteers%20in%20Ukraine%2001.jpg?itok=OopVivKc",
+    title: "Happy Volunteer Day",
     rows: 3,
     cols: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: "Burger",
+    img: "https://visitukraine.today/media/blog/previews/3Z3B2fyQaoIxptZNvEZ5qlyvfnylLvfmazUZ44xP.webp",
+    title: "Hospital Assistance",
   },
   {
-    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
-    title: "Camera",
+    img: "https://450.org.ua/wp-content/uploads/2023/04/photo_2023-04-21_11-43-26-768x1024.webp",
+    title: "Warrior",
   },
   {
-    img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
-    title: "Coffee",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ0YEN38R7-MFGrJ-9xvReCYHbiNs0kUeKHw&s",
+    title: "Medical Support",
     cols: 2,
     rows: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
-    title: "Hats",
+    img: "https://news.blog.net.ua/media/2023/05/1683710103_201_SHveyna-rota-iak-volontery-u-Lvovi-shyiut-adaptyvnyy-odiah-dlia.jpg",
+    title: "Costume",
     cols: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
-    title: "Honey",
-    author: "@arwinneil",
+    img: "https://pokrovsk.news/uploads/news/redactor/rfudeoggdua5qq9y.jpg",
+    title: "Work time",
     rows: 2,
     cols: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
-    title: "Basketball",
+    img: "https://static01.nyt.com/images/2022/05/10/travel/oakImage-1652189194797/oakImage-1652189194797-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+    title: "Help",
   },
   {
-    img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
-    title: "Fern",
+    img: "https://www.unicef.org/ukraine/sites/unicef.org.ukraine/files/styles/press_release_feature/public/DSC08205.JPG.webp?itok=zjkPF3WM",
+    title: "Achivements",
   },
 ];
 
@@ -111,17 +110,21 @@ export const Media = () => {
             </Stack>
           </Stack>
           <Stack flex="1" maxWidth="800px" maxHeight="650px">
-            <ImageList
-              // sx={{ width: 500, height: 450 }}
-              variant="quilted"
-              cols={4}
-              rowHeight={121}
-            >
-              {itemData.map((item) => (
+            <ImageList variant="quilted" cols={4} rowHeight={121}>
+              {itemData.map((item, index) => (
                 <ImageListItem
-                  key={item.img}
+                  key={index}
                   cols={item.cols || 1}
                   rows={item.rows || 1}
+                  sx={{
+                    "& img": {
+                      transition: "transform 0.3s ease-in-out",
+                    },
+                    "&:hover img": {
+                      transform: "scale(1.1)",
+                    },
+                    overflow: "hidden",
+                  }}
                 >
                   <img
                     {...srcset(item.img, 121, item.rows, item.cols)}

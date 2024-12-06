@@ -8,7 +8,7 @@ import { SmallElipse } from "@/pages/images/SmallCircle";
 export const decorativeShapes = [
   {
     Component: GreenShape,
-    left: "200px",
+    left: "625px",
     top: "-50px",
     direction: "horizontal" as const,
     duration: 4,
@@ -16,7 +16,7 @@ export const decorativeShapes = [
   },
   {
     Component: PurpleShape,
-    left: "550px",
+    left: "975px",
     top: "-50px",
     direction: "vertical" as const,
     duration: 5,
@@ -24,7 +24,7 @@ export const decorativeShapes = [
   },
   {
     Component: LargeElipse,
-    left: "300px",
+    left: "725px",
     top: "550px",
     direction: "vertical" as const,
     duration: 6,
@@ -32,7 +32,7 @@ export const decorativeShapes = [
   },
   {
     Component: SmallElipse,
-    left: "-50px",
+    left: "375px",
     top: "-50px",
     direction: "vertical" as const,
     duration: 3.5,
@@ -40,7 +40,7 @@ export const decorativeShapes = [
   },
   {
     Component: BlueShape,
-    left: "-90px",
+    left: "335px",
     top: "300px",
     direction: "vertical" as const,
     duration: 4.5,
@@ -48,7 +48,7 @@ export const decorativeShapes = [
   },
   {
     Component: OrangeShape,
-    left: "849px",
+    left: "1274px",
     top: "300px",
     direction: "vertical" as const,
     duration: 5.5,

@@ -43,4 +43,11 @@ const Description = styled(Typography)`
   font-weight: 500;
   line-height: 33px;
   margin-top: 3px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  &::after {
+    content: "...";
+  }
 `;

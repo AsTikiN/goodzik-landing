@@ -8,22 +8,22 @@ import { Box, Stack } from "@mui/system";
 
 const members = [
   {
-    name: "John Doe",
-    role: "CEO",
+    name: "Olena Kovalenko",
+    role: "Founder & CEO",
     image:
       "https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2F3kINE%2FMAGU8q3kINE%2F1%2Fp.png/watermark:F/width:531?csig=AAAAAAAAAAAAAAAAAAAAAEDb1BceAUSuzV7jNLdYTmHGABVpRbkiYG__ibsM5kUE&exp=1733493261&osig=AAAAAAAAAAAAAAAAAAAAABgL1zQesSr_vnc2VXtpRwX758AnBncjmTdzo8LKbzcv&signer=media-rpc&x-canva-quality=screen",
   },
   {
-    name: "John Doe",
-    role: "CEO",
+    name: "Iryna Petrenko",
+    role: "Lead Designer",
     image:
-      "https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2F3kINE%2FMAGU8q3kINE%2F1%2Fp.png/watermark:F/width:531?csig=AAAAAAAAAAAAAAAAAAAAAEDb1BceAUSuzV7jNLdYTmHGABVpRbkiYG__ibsM5kUE&exp=1733493261&osig=AAAAAAAAAAAAAAAAAAAAABgL1zQesSr_vnc2VXtpRwX758AnBncjmTdzo8LKbzcv&signer=media-rpc&x-canva-quality=screen",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
   },
   {
-    name: "John Doe",
-    role: "CEO",
+    name: "Natalia Bondar",
+    role: "Tech Lead",
     image:
-      "https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2F3kINE%2FMAGU8q3kINE%2F1%2Fp.png/watermark:F/width:531?csig=AAAAAAAAAAAAAAAAAAAAAEDb1BceAUSuzV7jNLdYTmHGABVpRbkiYG__ibsM5kUE&exp=1733493261&osig=AAAAAAAAAAAAAAAAAAAAABgL1zQesSr_vnc2VXtpRwX758AnBncjmTdzo8LKbzcv&signer=media-rpc&x-canva-quality=screen",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
   },
 ];
 
@@ -33,8 +33,9 @@ export const Team = () => {
       <Container>
         <Title>Our Team</Title>
         <Description>
-          Don’t waste time on search manual tasks. Let Automation do it for you.
-          Simplify workflows, reduce errors, and save time.
+          Meet the dedicated professionals behind our mission to create adaptive
+          clothing solutions. Our team combines expertise in fashion design,
+          accessibility, and technology to serve those in need.
         </Description>
         <Stack
           height="400px"

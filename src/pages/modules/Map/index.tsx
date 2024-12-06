@@ -86,19 +86,20 @@ export const Map = () => {
 
   return (
     <SnapSection
-      padding="100px 0"
-      justifyContent="center"
+      pt="100px"
+      justifyContent="flex-end"
       width="100vw"
       height="400px"
     >
       <Container>
         <Title>Where we are</Title>
         <Description>
-          We are located in the heart of the city, in the center of the business
-          district.
+          We have locations across Ukraine, including Kyiv, Lviv, Kharkiv,
+          Odesa, and other major cities, providing support and services to
+          communities nationwide.
         </Description>
       </Container>
-      <Box mt="40px" width="100%" height="650px" ref={mapContainerRef}></Box>
+      <Box mt="80px" width="100%" height="650px" ref={mapContainerRef}></Box>
 
       <Popover
         open={Boolean(popoverAnchor)}
