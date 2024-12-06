@@ -1,40 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🧵 Sewing Division Frontend
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-14.0-black.svg)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.1-blue.svg)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-38B2AC.svg)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-First, run the development server:
+The landing page for Sewing Division ("Швейна рота") - a volunteer organization platform that coordinates the production of adaptive clothing for wounded military personnel. This website serves as the main entry point for volunteers, beneficiaries, and supporters.
+
+## ✨ Key Features
+
+- **Video Integration**: Embedded tutorials and impact stories
+- **Interactive Map**: Displaying volunteer locations worldwide
+- **Donation Integration**: Direct support through various payment methods
+- **Team Showcase**: Interactive display of team members and coordinators
+- **Resource Categories**: Organized sections for different types of adaptive clothing
+- **Dynamic Content**: Easy-to-update sections for news and achievements from admin panel
+
+## 🛠️ Technology Stack
+
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Internationalization**: next-intl
+- **Form Handling**: react-hook-form
+- **Video Player**: react-player
+- **Maps**: react-leaflet
+
+## 🚀 Getting Started
+
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```plaintext
+src/
+├── app/              # App router
+├── components/       # Reusable components
+│   ├── ui/          # Basic UI components
+│   ├── layout/      # Layout components
+│   └── sections/    # Page sections
+├── lib/             # Utilities and configurations
+├── styles/          # Global styles
+├── types/           # TypeScript definitions
+└── locales/         # Translation files
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 📱 Pages and Sections
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Home**: Main landing with key statistics and mission
+- **About Us**: Organization history and impact
+- **Team**: Team members and coordinators
+- **Projects**: Different clothing categories and programs
+- **Support**: Donation and support options
+- **Contact**: Contact forms and information
 
-## Learn More
+## 🌍 Impact Statistics
 
-To learn more about Next.js, take a look at the following resources:
+- 100,000+ adaptive clothing items produced
+- 700+ volunteers worldwide
+- 1,800+ individual requests fulfilled
+- 100+ medical facilities served
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+We welcome contributions! Please follow these steps:
 
-## Deploy on Vercel
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 Connect With Us
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- [Instagram](https://www.instagram.com/shveina_rota)
+- [Facebook](https://www.facebook.com/profile.php?id=100083407995435)
+- [Telegram](https://t.me/shveina_rota)
+- [Twitter](https://twitter.com/ShveinaRota)
+
+## 💝 Support Our Mission
+
+- MonoBank: 5375 4112 0381 7304
+- [PayPal](mailto:marishka.polo@gmail.com)
+- [Support Link](https://send.monobank.ua/jar/5VV7zhDJGY)
+
+## 📄 License
+
+This project is licensed under the MIT License.
