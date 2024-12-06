@@ -24,9 +24,8 @@ export const Guides = ({ guides, news }: GuidesProps) => {
 };
 
 export const getStaticProps = async () => {
-  const guidesResponse = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/guides`
-  );
+  const NEXT_PUBLIC_API_URL = "https://goodzik-api.eventbook.pp.ua";
+  const guidesResponse = await fetch(`${NEXT_PUBLIC_API_URL}/guides`);
 
   if (!guidesResponse.ok) throw new Error("Failed to fetch guides");
 

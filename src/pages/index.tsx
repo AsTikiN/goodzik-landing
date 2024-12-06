@@ -52,9 +52,9 @@ type Repo = {
 };
 
 export const getServerSideProps = (async () => {
-  // Fetch data from external API
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/news`);
+  const NEXT_PUBLIC_API_URL = "https://goodzik-api.eventbook.pp.ua";
+  const res = await fetch(`${NEXT_PUBLIC_API_URL}/news`);
   const repo: Repo = await res.json();
-  // Pass data to the page via props
+
   return { props: { repo } };
 }) satisfies GetServerSideProps<{ repo: Repo }>;
