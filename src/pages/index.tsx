@@ -35,14 +35,14 @@ export default function Home({
         <Header />
         <Slogan />
         <Donate />
-        <AppPreview />
-        <Partners />
         <Achievements />
-        <Service />
+        <Partners />
         <Team />
         <Advantages />
         <Media />
         <Map />
+        <AppPreview />
+        <Service />
       </SnapContainer>
     </>
   );
