@@ -1,4 +1,3 @@
-import { Navigation } from "./components/Navigation";
 import { Box, Container, Stack } from "@mui/system";
 import { Logo } from "./components/Logo";
 import { Button } from "@/components/Button";

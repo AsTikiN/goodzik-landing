@@ -1,13 +1,5 @@
 import { Button } from "@/components/Button";
 import { SnapSection } from "@/components/SnapSection";
-import { BlueShape } from "@/pages/images/BlueShape";
-import { GreenShape } from "@/pages/images/GreenShape";
-import { LargeElipse } from "@/pages/images/LargeElipse";
-import { OrangeRectangle } from "@/pages/images/OrangeRectangle";
-import { OrangeShape } from "@/pages/images/OrangeShape";
-import { SmallElipse } from "@/pages/images/SmallCircle";
-import { SmallGreenElipse } from "@/pages/images/SmallGreenCircle";
-
 import { Container, styled, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import { decorativeShapes } from "./data/decorativeShapes";
@@ -32,8 +24,8 @@ export const Slogan = () => {
           </ScrollMotion>
           <ScrollMotion>
             <Subtitle>
-              "Sewing Platoon" creates adaptive clothing for wounded heroes,
-              uniting thousands of hands to support Ukraine.
+              &ldquo;Sewing Platoon&rdquo; creates adaptive clothing for wounded
+              heroes, uniting thousands of hands to support Ukraine.
             </Subtitle>
           </ScrollMotion>
 

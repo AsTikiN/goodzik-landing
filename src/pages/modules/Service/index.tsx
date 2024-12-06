@@ -6,8 +6,6 @@ import {
   GuideIcon,
   NewsIcon,
   OpenApiIcon,
-  ShoppingBagIcon,
-  ShoppingCartIcon,
 } from "../../images/icons";
 import { BlueRectangle } from "@/pages/images/BlueRectangle";
 import { SnapSection } from "@/components/SnapSection";

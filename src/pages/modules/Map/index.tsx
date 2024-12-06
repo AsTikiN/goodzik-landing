@@ -52,7 +52,7 @@ export const Map = () => {
           .addTo(mapRef.current!);
 
         const markerElement = marker.getElement();
-        markerElement.addEventListener("click", (e) => {
+        markerElement.addEventListener("click", () => {
           setSelectedLocation(location);
           setPopoverAnchor(markerElement);
 
