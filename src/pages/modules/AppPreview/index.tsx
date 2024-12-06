@@ -1,4 +1,4 @@
-import { Box, Container, styled, Typography, Divider } from "@mui/material";
+import { Box, Container, styled, Divider } from "@mui/material";
 import { Stack } from "@mui/system";
 import { decorativeShapes } from "./data/decorativeShapes";
 import { floatAnimation } from "../../../lib/floatAnimation";
