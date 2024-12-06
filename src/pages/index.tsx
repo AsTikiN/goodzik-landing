@@ -12,6 +12,7 @@ import { Partners } from "../modules/Partners";
 import { Media } from "../modules/Media";
 import { Map } from "../modules/Map";
 import { Team } from "../modules/Team";
+import { Donate } from "@/modules/Donate";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,6 +34,7 @@ export default function Home({
       <SnapContainer>
         <Header />
         <Slogan />
+        <Donate />
         <AppPreview />
         <Partners />
         <Achievements />
