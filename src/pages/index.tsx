@@ -1,12 +1,11 @@
 import localFont from "next/font/local";
+import { SnapContainer } from "@/components/SnapContainer";
 import { Header } from "./modules/Header";
 import { AppPreview } from "./modules/AppPreview";
 import { Achievements } from "./modules/Achievements";
 import { Service } from "./modules/Service";
 import { Advantages } from "./modules/Advantages";
 import { Slogan } from "./modules/Slogan";
-import { Stack } from "@mui/system";
-import { styled } from "@mui/material";
 import { Partners } from "./modules/Partners";
 import { Media } from "./modules/Media";
 import { Map } from "./modules/Map";
@@ -137,9 +136,3 @@ export default function Home() {
     </>
   );
 }
-
-const SnapContainer = styled(Stack)`
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-`;

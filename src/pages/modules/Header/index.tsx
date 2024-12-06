@@ -12,6 +12,9 @@ export const Header = () => {
       bgcolor="white"
       borderBottom="1px solid #E0E0E0"
       padding="24px 0"
+      left={0}
+      right={0}
+      top={0}
     >
       <Container>
         <Stack

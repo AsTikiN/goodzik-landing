@@ -1,0 +1,45 @@
+import { Card, styled, Typography } from "@mui/material";
+import { GuideDto } from "../../types/GuideDto";
+
+export interface GuideCardProps {
+  data: GuideDto;
+}
+
+export const GuideCard = ({ data }: GuideCardProps) => {
+  return (
+    <GuideCard.Wrapper variant="outlined">
+      <GuideCard.Header>
+        <GuideCard.Title variant="h6" fontWeight={600}>
+          {data.title}
+        </GuideCard.Title>
+        <Typography variant="caption">
+          {Intl.DateTimeFormat().format(new Date(data.date))}
+        </Typography>
+      </GuideCard.Header>
+      <Typography variant="body1" color="textSecondary">
+        {data.description}
+      </Typography>
+    </GuideCard.Wrapper>
+  );
+};
+
+GuideCard.Title = styled(Typography)`
+  line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+`;
+
+GuideCard.Header = styled("div")`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+GuideCard.Wrapper = styled(Card)`
+  display: flex;
+  flex-direction: column;
+  border-radius: ${({ theme }) => `${theme.shape.borderRadius * 2}px`};
+  padding: ${({ theme }) => theme.spacing(2)};
+`;
