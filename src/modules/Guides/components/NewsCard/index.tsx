@@ -1,6 +1,6 @@
 import { alpha, Card, Stack, styled, Typography } from "@mui/material";
 import { NewsDto } from "../../types/NewsDto";
-import { NewsIcon } from "@/pages/images/icons";
+import { NewsIcon } from "@/images/icons";
 
 export interface NewsCardProps {
   data: NewsDto;

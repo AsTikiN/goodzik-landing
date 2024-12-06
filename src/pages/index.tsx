@@ -2,16 +2,16 @@ import type { GetServerSideProps, InferGetServerSidePropsType } from "next";
 
 import localFont from "next/font/local";
 import { SnapContainer } from "@/components/SnapContainer";
-import { Header } from "./modules/Header";
-import { AppPreview } from "./modules/AppPreview";
-import { Achievements } from "./modules/Achievements";
-import { Service } from "./modules/Service";
-import { Advantages } from "./modules/Advantages";
-import { Slogan } from "./modules/Slogan";
-import { Partners } from "./modules/Partners";
-import { Media } from "./modules/Media";
-import { Map } from "./modules/Map";
-import { Team } from "./modules/Team";
+import { Header } from "../modules/Header";
+import { AppPreview } from "../modules/AppPreview";
+import { Achievements } from "../modules/Achievements";
+import { Service } from "../modules/Service";
+import { Advantages } from "../modules/Advantages";
+import { Slogan } from "../modules/Slogan";
+import { Partners } from "../modules/Partners";
+import { Media } from "../modules/Media";
+import { Map } from "../modules/Map";
+import { Team } from "../modules/Team";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

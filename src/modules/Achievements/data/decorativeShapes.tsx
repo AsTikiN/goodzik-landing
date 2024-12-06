@@ -1,7 +1,7 @@
-import { BlueShape } from "@/pages/images/BlueShape";
-import { GreenShape } from "@/pages/images/GreenShape";
-import { OrangeShape } from "@/pages/images/OrangeShape";
-import { SmallElipse } from "@/pages/images/SmallCircle";
+import { BlueShape } from "@/images/BlueShape";
+import { GreenShape } from "@/images/GreenShape";
+import { OrangeShape } from "@/images/OrangeShape";
+import { SmallElipse } from "@/images/SmallCircle";
 
 export const decorativeShapes = [
   {

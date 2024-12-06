@@ -1,4 +1,4 @@
-import { Header } from "@/pages/modules/Header";
+import { Header } from "@/modules/Header";
 import { Stack, Typography } from "@mui/material";
 import { Container, styled } from "@mui/system";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";

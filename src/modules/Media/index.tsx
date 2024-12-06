@@ -10,11 +10,7 @@ import { srcset } from "./lib/srcset";
 import { Stack } from "@mui/system";
 import { ScrollMotion } from "@/components/ScrollMotion";
 import { timings } from "@/config/animation";
-import {
-  FacebookIcon,
-  InstagramIcon,
-  TelegramIcon,
-} from "@/pages/images/icons";
+import { FacebookIcon, InstagramIcon, TelegramIcon } from "@/images/icons";
 
 const itemData = [
   {

@@ -1,9 +1,9 @@
-import { BlueShape } from "@/pages/images/BlueShape";
-import { GreenShape } from "@/pages/images/GreenShape";
-import { LargeElipse } from "@/pages/images/LargeElipse";
-import { OrangeShape } from "@/pages/images/OrangeShape";
-import { PurpleShape } from "@/pages/images/PurpleShape";
-import { SmallElipse } from "@/pages/images/SmallCircle";
+import { BlueShape } from "@/images/BlueShape";
+import { GreenShape } from "@/images/GreenShape";
+import { LargeElipse } from "@/images/LargeElipse";
+import { OrangeShape } from "@/images/OrangeShape";
+import { PurpleShape } from "@/images/PurpleShape";
+import { SmallElipse } from "@/images/SmallCircle";
 
 export const decorativeShapes = [
   {

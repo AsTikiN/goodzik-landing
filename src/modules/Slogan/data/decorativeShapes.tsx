@@ -1,7 +1,7 @@
-import { GreenShape } from "@/pages/images/GreenShape";
-import { LargeElipse } from "@/pages/images/LargeElipse";
-import { SmallElipse } from "@/pages/images/SmallCircle";
-import { SmallGreenElipse } from "@/pages/images/SmallGreenCircle";
+import { GreenShape } from "@/images/GreenShape";
+import { LargeElipse } from "@/images/LargeElipse";
+import { SmallElipse } from "@/images/SmallCircle";
+import { SmallGreenElipse } from "@/images/SmallGreenCircle";
 
 export const decorativeShapes = [
   {

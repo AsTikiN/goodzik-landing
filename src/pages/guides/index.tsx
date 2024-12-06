@@ -1,9 +1,9 @@
 import { Container, Stack, styled } from "@mui/material";
-import { Header } from "../modules/Header";
-import { GuideDto } from "../modules/Guides/types/GuideDto";
-import { GuidesSection } from "../modules/Guides/components/GuidesSection";
-import { NewsSection } from "../modules/Guides/components/NewsSection";
-import { NewsDto } from "../modules/Guides/types/NewsDto";
+import { Header } from "../../modules/Header";
+import { GuideDto } from "../../modules/Guides/types/GuideDto";
+import { GuidesSection } from "../../modules/Guides/components/GuidesSection";
+import { NewsSection } from "../../modules/Guides/components/NewsSection";
+import { NewsDto } from "../../modules/Guides/types/NewsDto";
 
 export interface GuidesProps {
   guides: GuideDto[];

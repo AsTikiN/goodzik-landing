@@ -1,16 +1,18 @@
 import { Box, Container, Stack } from "@mui/system";
 import { styled, Typography } from "@mui/material";
-import { ServiceCard } from "./components/ServiceCard";
 import {
   AiAssistantIcon,
   GuideIcon,
   NewsIcon,
   OpenApiIcon,
+  ShoppingBagIcon,
+  ShoppingCartIcon,
 } from "../../images/icons";
-import { BlueRectangle } from "@/pages/images/BlueRectangle";
 import { SnapSection } from "@/components/SnapSection";
 import { ScrollMotion } from "@/components/ScrollMotion";
 import { timings } from "@/config/animation";
+import { ServiceCard } from "../Service/components/ServiceCard";
+import { BlueRectangle } from "@/images/BlueRectangle";
 
 const services = [
   {

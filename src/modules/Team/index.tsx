@@ -1,8 +1,8 @@
 import { ScrollMotion } from "@/components/ScrollMotion";
 import { SnapSection } from "@/components/SnapSection";
 import { timings } from "@/config/animation";
-import { BlueRectangle } from "@/pages/images/BlueRectangle";
-import { OrangeRectangle } from "@/pages/images/OrangeRectangle";
+import { BlueRectangle } from "@/images/BlueRectangle";
+import { OrangeRectangle } from "@/images/OrangeRectangle";
 import { Container, styled, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 

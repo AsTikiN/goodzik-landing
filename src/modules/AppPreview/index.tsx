@@ -1,7 +1,7 @@
 import { Box, Container, styled, Divider } from "@mui/material";
 import { Stack } from "@mui/system";
 import { decorativeShapes } from "./data/decorativeShapes";
-import { floatAnimation } from "../../../lib/floatAnimation";
+import { floatAnimation } from "../../lib/floatAnimation";
 import { SnapSection } from "@/components/SnapSection";
 import { ScrollMotion } from "@/components/ScrollMotion";
 import { timings } from "@/config/animation";

@@ -9,7 +9,7 @@ import {
   ShoppingBagIcon,
   ShoppingCartIcon,
 } from "../../images/icons";
-import { BlueRectangle } from "@/pages/images/BlueRectangle";
+import { BlueRectangle } from "@/images/BlueRectangle";
 import { SnapSection } from "@/components/SnapSection";
 import { ScrollMotion } from "@/components/ScrollMotion";
 import { timings } from "@/config/animation";
