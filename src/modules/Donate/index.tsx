@@ -11,7 +11,7 @@ export const Donate = () => {
     "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&bn=AngellEYE_PHPClass&business=marishka.polo@gmail.com";
 
   return (
-    <SnapSection>
+    <SnapSection id="support">
       <Stack justifyContent="center" alignItems="center" height="100%">
         <Container>
           <Stack

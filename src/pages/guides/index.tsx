@@ -11,7 +11,6 @@ export interface GuidesProps {
 }
 
 export const Guides = ({ guides, news }: GuidesProps) => {
-  console.log(news);
   return (
     <Container>
       <Header />

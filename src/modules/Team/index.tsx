@@ -5,29 +5,118 @@ import { BlueRectangle } from "@/images/BlueRectangle";
 import { OrangeRectangle } from "@/images/OrangeRectangle";
 import { Container, styled, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
+import { useState } from "react";
+import SwipeableViews from "react-swipeable-views";
+import { autoPlay } from "react-swipeable-views-utils";
 
 const members = [
   {
-    name: "Olena Kovalenko",
-    role: "Founder & CEO",
-    image:
-      "https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2F3kINE%2FMAGU8q3kINE%2F1%2Fp.png/watermark:F/width:531?csig=AAAAAAAAAAAAAAAAAAAAAEDb1BceAUSuzV7jNLdYTmHGABVpRbkiYG__ibsM5kUE&exp=1733493261&osig=AAAAAAAAAAAAAAAAAAAAABgL1zQesSr_vnc2VXtpRwX758AnBncjmTdzo8LKbzcv&signer=media-rpc&x-canva-quality=screen",
-  },
-  {
-    name: "Iryna Petrenko",
-    role: "Lead Designer",
+    name: "Maryna Palchenko",
+    role: "Founder",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
   },
   {
-    name: "Natalia Bondar",
-    role: "Tech Lead",
+    name: "Kseniia Samoilych",
+    role: "Project Lead",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Tetiana Petrenko",
+    role: "Slobozhanske Coordinator",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Iryna Bohdanova",
+    role: "Lead Seamstress, Kyiv",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Sasha Holenko",
+    role: "Poltava Coordinator",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Elvira Hontar",
+    role: "Poltava Coordinator",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Vadym Minenko",
+    role: "Director",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Iryna Synyshyn",
+    role: "Ternopil Coordinator",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Svitlana Boiko",
+    role: "Lead Seamstress, Odesa",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Tetiana Markevych",
+    role: "Rivne Coordinator",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Yuliia Hnatiuk",
+    role: "Vinnytsia Coordinator",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Olha Ruchyi",
+    role: "Petropavlivka Coordinator",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Ruslana Prach",
+    role: "Pixel Fairies Lead",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Vira Puzii",
+    role: "Kyiv Coordinator",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Anastasiia Chebotarova",
+    role: "Kyiv Coordinator",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
+  },
+  {
+    name: "Nataliia Bezvushko",
+    role: "Kyiv Coordinator",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8BiZ3kphdPkGK_NMTSQmKU1lV11Sl0-gmg&s",
   },
 ];
 
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+
 export const Team = () => {
+  const [activeStep, setActiveStep] = useState(0);
+
+  const handleStepChange = (step: number) => {
+    setActiveStep(step);
+  };
+
   return (
     <SnapSection justifyContent="center">
       <Container>
@@ -44,27 +133,55 @@ export const Team = () => {
           width="100%"
           mt="90px"
         >
-          {members.map((member, index) => (
-            <ScrollMotion key={index} delay={index * timings.stagger}>
-              <Stack
-                position="relative"
-                bgcolor="white"
-                borderRadius="20px"
-                boxShadow="0px 10px 30px 0px rgba(0, 0, 0, 0.05)"
-                padding="20px"
-                gap="20px"
-              >
-                <Image src={member.image} alt={member.name} />
-                <Stack gap="4px">
-                  <MemberTitle>{member.name}</MemberTitle>
-                  <MemberRole>{member.role}</MemberRole>
+          <AutoPlaySwipeableViews
+            axis="x"
+            index={activeStep}
+            onChangeIndex={handleStepChange}
+            enableMouseEvents
+            style={{ position: "relative" }}
+          >
+            {Array.from({ length: Math.ceil(members.length / 3) }).map(
+              (_, viewIndex) => (
+                <Stack
+                  key={viewIndex}
+                  direction="row"
+                  gap="100px"
+                  p="20px"
+                  sx={{ padding: "20px" }}
+                  borderRadius="20px"
+                  overflow="hidden"
+                >
+                  {members
+                    .slice(viewIndex * 3, (viewIndex + 1) * 3)
+                    .map((member, index) => (
+                      <ScrollMotion key={index} delay={index * timings.stagger}>
+                        <Stack
+                          position="relative"
+                          bgcolor="white"
+                          borderRadius="20px"
+                          boxShadow="0px 10px 30px 0px rgba(0, 0, 0, 0.05)"
+                          padding="20px"
+                          gap="20px"
+                        >
+                          <Image src={member.image} alt={member.name} />
+                          <Stack gap="4px">
+                            <MemberTitle>{member.name}</MemberTitle>
+                            <MemberRole>{member.role}</MemberRole>
+                          </Stack>
+                          <ShapeWrapper>
+                            {index % 2 === 0 ? (
+                              <BlueRectangle />
+                            ) : (
+                              <OrangeRectangle />
+                            )}
+                          </ShapeWrapper>
+                        </Stack>
+                      </ScrollMotion>
+                    ))}
                 </Stack>
-                <ShapeWrapper>
-                  {index % 2 === 0 ? <BlueRectangle /> : <OrangeRectangle />}
-                </ShapeWrapper>
-              </Stack>
-            </ScrollMotion>
-          ))}
+              )
+            )}
+          </AutoPlaySwipeableViews>
         </Stack>
       </Container>
     </SnapSection>

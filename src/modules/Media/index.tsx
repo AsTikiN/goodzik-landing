@@ -60,18 +60,21 @@ const socialMediaData = [
     description:
       "Follow us for daily style inspiration, behind-the-scenes content, and exclusive product previews",
     icon: <InstagramIcon />,
+    link: "https://www.instagram.com/shveina_rota"
   },
   {
     title: "Facebook",
     description:
       "Join our community for the latest news, special offers, and customer stories",
     icon: <FacebookIcon />,
+    link: "https://www.facebook.com/profile.php?id=100083407995435"
   },
   {
     title: "Telegram",
     description:
       "Get instant updates and chat with other adaptive fashion enthusiasts",
     icon: <TelegramIcon />,
+    link: "#"
   },
 ];
 
@@ -92,15 +95,17 @@ export const Media = () => {
             <Stack mt="20px" gap="30px">
               {socialMediaData.map((item, index) => (
                 <ScrollMotion key={index} delay={index * timings.stagger}>
-                  <Stack flexDirection="row" gap="20px">
-                    {item.icon}
-                    <Stack gap="8px">
-                      <SocialMediaTitle>{item.title}</SocialMediaTitle>
-                      <SocialMediaDescription>
-                        {item.description}
-                      </SocialMediaDescription>
+                  <SocialMediaLink href={item.link} target="_blank" rel="noopener noreferrer">
+                    <Stack flexDirection="row" gap="20px">
+                      {item.icon}
+                      <Stack gap="8px">
+                        <SocialMediaTitle>{item.title}</SocialMediaTitle>
+                        <SocialMediaDescription>
+                          {item.description}
+                        </SocialMediaDescription>
+                      </Stack>
                     </Stack>
-                  </Stack>
+                  </SocialMediaLink>
                 </ScrollMotion>
               ))}
             </Stack>
@@ -157,4 +162,14 @@ const SocialMediaTitle = styled(Typography)({
 const SocialMediaDescription = styled(Typography)({
   fontSize: "20px",
   fontWeight: 400,
+});
+
+const SocialMediaLink = styled('a')({
+  textDecoration: 'none',
+  color: 'inherit',
+  display: 'block',
+  transition: 'transform 0.2s ease-in-out',
+  '&:hover': {
+    transform: 'translateX(10px)',
+  }
 });

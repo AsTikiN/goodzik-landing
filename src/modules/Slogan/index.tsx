@@ -39,9 +39,12 @@ export const Slogan = () => {
               <Button
                 variant="outlined"
                 size="large"
-                href="https://goodzik-api.eventbook.pp.ua/docs#/"
+                onClick={() => {
+                  const element = document.getElementById("support");
+                  element?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
-                API
+                Support us
               </Button>
             </ScrollMotion>
           </Stack>
